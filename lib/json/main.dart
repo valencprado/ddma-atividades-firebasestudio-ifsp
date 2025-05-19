@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
 
-import 'package:myapp/mago.dart';
+import 'package:myapp/json/mago.dart';
 
 void main() {
   runApp(const MyApp());
