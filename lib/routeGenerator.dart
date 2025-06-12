@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/routes/feiticoScreen.dart';
-import 'package:myapp/routes/listScreen.dart';
-import 'package:myapp/models/mago.dart';
+import 'package:myapp/routes/userScreen.dart';
+import 'package:myapp/routes/home.dart';
+import 'package:myapp/models/user.dart';
 
 class RouteGenerator {
-  static const String list = '/';
-  static const String feiticos = '/feiticos';
+  static const String home = '/';
+  static const String user = '/user';
 
   RouteGenerator._();
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case list:
+      case home:
         return MaterialPageRoute(builder: (_) => ListScreen());
-      case feiticos:
-        if (settings.arguments is Mago) {
-          final mago = settings.arguments as Mago;
-          return MaterialPageRoute(builder: (_) => FeiticosScreen(mago: mago));
+      case user:
+        if (settings.arguments is User) {
+          final mago = settings.arguments as User;
+          return MaterialPageRoute(builder: (_) => UserScreen(user: mago));
         }
         return _erroRota();
       default:

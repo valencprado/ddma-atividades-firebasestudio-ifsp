@@ -30,7 +30,7 @@ class MyHomePage extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      initialRoute: RouteGenerator.list,
+      initialRoute: RouteGenerator.home,
       onGenerateRoute: RouteGenerator.generateRoute,
     );
   }
