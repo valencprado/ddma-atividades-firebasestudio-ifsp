@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'routes/routeGenerator.dart';
-import 'package:myapp/animatedList/aula_multiprovider_count_card/state/cart.dart';
+import 'package:myapp/state/cart.dart';
 import 'state/count.dart';
 import 'package:provider/provider.dart';
 

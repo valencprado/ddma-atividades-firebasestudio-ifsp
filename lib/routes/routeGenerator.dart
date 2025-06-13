@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/animatedList/aula_multiprovider_count_card/routes/home.dart';
-import 'package:myapp/animatedList/aula_multiprovider_count_card/routes/second.dart';
+import 'package:myapp/routes/home.dart';
+import 'package:myapp/routes/second.dart';
 
 class RouteGenerator {
   // string com os caminhos para nossas telas.

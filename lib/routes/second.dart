@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/animatedList/aula_multiprovider_count_card/state/cart.dart';
-import 'package:myapp/animatedList/aula_multiprovider_count_card/state/count.dart';
-import 'package:myapp/json/main.dart';
+import 'package:myapp/state/cart.dart';
+import 'package:myapp/state/count.dart';
+import 'package:myapp/main.dart';
 import 'package:provider/provider.dart';
 
 class Second extends StatefulWidget {
