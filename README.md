@@ -1,16 +1,32 @@
-# myapp
+# Atividades de Desenvolvimento para Dispositivos Móveis no Firebase Studio
 
-A new Flutter project.
+Atividades criadas no Firebase Studio. As atividades foram separadas em branches para facilitar os testes e a organização do código.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Tecnologias
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter
+- Provider e MultiProvider
+- Rotas
+- Componentes de lista (ListView e builder, AnimatedList, ListTile)
+- Tratamento de Json manual
+- Tratamento de Json automático do Flutter
+- Requisições HTTP (GET)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Branches 🌳
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+### main
+Documentação + organização antiga.
+
+## animatedList
+Atividade com o componente animatedList e múltiplos Providers
+
+## jsonManual
+Primeiro contato com o tratamento de JSON do Flutter utilizando Factory e jsonEncode/jsonDecode
+
+## jsonAutomatico
+Utilização do processamento do Flutter com base nas classes (comando dart run build_runner build --delete-conflicting-outputs).
+
+## http
+Tratamento de uma requisição GET.
