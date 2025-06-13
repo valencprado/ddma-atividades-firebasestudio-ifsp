@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/models/user.dart';
-import 'package:myapp/models/address.dart';
 
 class UserScreen extends StatelessWidget {
   final User user;
@@ -12,20 +11,23 @@ class UserScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
 
-        title: Text("JSON (auto) - Valentina Prado"),
+        title: Text("HTTP - Valentina Prado"),
       ),
       body: Center(
         child: Expanded(
-          // child: Text(json),
-          child: Card(
-            child: ListTile(
-              title: Text(
-                "Nome: ${user.name}",
-                style: TextStyle(fontWeight: FontWeight.bold),
+          child: Column(
+            children: [
+              Text(
+                "${user.name}",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
               ),
-              subtitle: Text("Username: ${user.username} \n Email: ${user.email} \n Empresa: ${user.}"),
-              isThreeLine: true,
-            ),
+              Text("Username: ${user.username}"),
+              Text("Email: ${user.email}"),
+              Text(
+                "Empresa: ${user.company?.name} (${user.company?.catchPhrase})",
+              ),
+              Text("Reside na cidade: ${user.address?.city}"),
+            ],
           ),
         ),
       ),
